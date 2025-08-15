@@ -11,7 +11,7 @@ function TaskPage() {
 
   return (
     <div className="h-screen w-screen bg-slate-500 p-6">
-      <div className="space-y-4 w-[500px] mx-auto bg-slate-100 rounded-md shadow-lg p-6 ">
+      <div className="space-y-4  bg-slate-100 rounded-md shadow-lg p-6 ">
         <div className="flex justify-center relative">
             <button onClick={() => navigate (-1)} className="absolute left-0 top-0 p-2 bg-slate-400 rounded-md text-slate-100" >
                <ChevronLeftIcon className="text-white" />

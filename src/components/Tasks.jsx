@@ -7,6 +7,7 @@ function Tasks({ tasks, onTaskClick, onDeleteTaskClick }) {
   const navigate = useNavigate();
 
   function onSeeDetailsClick(task) {
+   
     const query = new URLSearchParams();
     query.set("title", task.title);
     query.set("description", task.description);
@@ -25,7 +26,7 @@ function Tasks({ tasks, onTaskClick, onDeleteTaskClick }) {
             {task.isCompleted && <CheckIcon /> }
             {task.title}
           </button>
-
+ 
           <Button onClick={() => onSeeDetailsClick(task)}>
             <ChevronRightIcon />
           </Button>
